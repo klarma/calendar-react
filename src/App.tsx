@@ -1,11 +1,11 @@
-import { Week } from "./Week";
-export function App() {
+import { Year } from "./Year";
 
+export function App() {
   const days: string[] = ["pon", "wt", "śrd", "czw", "pt", "sb", "niedz"];
 
   return (
     <>
-      <Week days={days} />
+      <Year days={days}/>
     </>
   );
 };
