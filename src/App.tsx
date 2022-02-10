@@ -1,6 +1,6 @@
-import { Year } from "./Year";
+import Year from "./components/Year";
 
-export function App() {
+function App() {
   const days: string[] = ["pon", "wt", "śrd", "czw", "pt", "sb", "niedz"];
 
   return (
@@ -10,3 +10,4 @@ export function App() {
   );
 };
 
+export default App;

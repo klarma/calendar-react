@@ -1,9 +1,11 @@
-import { Day } from "./Day";
+import Day from "../Day";
 
-export const Week = ({ days }) => (
+const Week = ({ days }) => (
     <div className="week">
         {days.map(day =>
             <Day name={day} key={day} />
         )}
     </div>
 );
+
+export default Week;
