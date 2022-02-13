@@ -1,5 +1,5 @@
 import Week from "../Week";
-import "./style.css";
+import StyledMonth from "./styled";
 
 const Month = ({ days, daysOfMonth }) => {
     const amountWeeksOfMonth = 6;
@@ -7,11 +7,11 @@ const Month = ({ days, daysOfMonth }) => {
 
     return (
         <>
-            <div className="month">
+            <StyledMonth className="month">
                 {indexOfWeeks.map(indexOfWeek => (
                     <Week days={days} key={indexOfWeek} />
                 ))}
-            </div>
+            </StyledMonth>
         </>
     )
 };

@@ -1,13 +1,12 @@
 import { FunctionComponent } from "react";
-import "./style.css";
-
+import StyledDay from "./styled";
 interface DayProps {
     name: string;
-}
+};
 
 const Day: FunctionComponent<DayProps> = ({ name }) => {
     return (
-        <div className="day">{name}</div>
+        <StyledDay>{name}</StyledDay>
     )
 };
 
